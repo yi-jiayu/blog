@@ -1,0 +1,5 @@
+theme = "my-first-theme"
+baseURL = "https://yi-jiayu.github.io/blog/"
+languageCode = "en-us"
+title = "Jiayu's Blog"
+publishDir = "/docs"
