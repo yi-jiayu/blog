@@ -2,15 +2,16 @@
 <html lang=en>
 <head>
 <meta charset=utf-8>
-
+<link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ .Hugo.Generator }}
 
 <title>{{ .Site.Title }}</title>
 </head>
 <body>
+<h1>{{ .Site.Title }}</h1>
+<div class="subtitle">A description</div>
 <ol>
-	<h1>{{ .Site.Title }}</h1>
     {{ range .Pages }}
     
     <li>
