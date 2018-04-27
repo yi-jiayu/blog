@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Roboto:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,400i|Roboto:400,700');
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Merriweather', serif;
 }
 
-h1 {
-	font-family: 'Merriweather', serif;
+h1, h2, h3, .subtitle {
+	font-family: 'Roboto', sans-serif;
 }
 
 .subtitle {
@@ -16,4 +16,10 @@ h1 {
 
 .heading {
 	margin-bottom: 1.25em;
+}
+
+.content {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
