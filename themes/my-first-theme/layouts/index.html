@@ -16,7 +16,7 @@
             {{ range .Pages }}
             <li>
                 <div>{{ .Date.Format "Jan 02" }} &middot; {{.ReadingTime}} min read</div>
-                <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a> {{ with .Params.subtitle }}
+                <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a> {{ with .Params.subtitle }}
                 <div>{{.}}</div>{{end}}
             </li>
             {{ end }}
