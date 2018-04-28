@@ -34,6 +34,7 @@ p {
 }
 
 pre {
+    background-color: var(--pink-50);
     padding: 1em;
     overflow-x: auto;
     white-space: pre-wrap;
