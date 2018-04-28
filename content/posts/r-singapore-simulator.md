@@ -1,8 +1,8 @@
 ---
 title: "r/singapore Simulator"
+slug: r-singapore-simulator
 subtitle: "Generating Reddit comments with Markov chains"
 date: 2018-04-28T13:45:03+08:00
-draft: true
 ---
 
 [Previously](https://medium.com/@jiayu./a-primer-on-markov-chains-2668d94032b1), we generated some new sentences from a small pool of existing sentences. Now, we'll generate some new comments based on all the existing comments in a Reddit thread!

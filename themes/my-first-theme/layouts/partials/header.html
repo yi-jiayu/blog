@@ -6,4 +6,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> {{ .Hugo.Generator }}
     <title>{{with .Params.Title }}{{.}} - {{end}}{{ .Site.Title }}</title>
+
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary}}{{end}}">
+
+    <meta name="og:title" content="{{with .Params.Title }}{{.}} - {{end}}{{ .Site.Title }}">
+	<meta name="og:type" content="website">
+	<meta name="og:url" content="{{ .Site.BaseURL }}">
+	<meta name="og:site_name" content="Jiayu's Blog">
+	<meta name="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Summary}}{{end}}">
 </head>

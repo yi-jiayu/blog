@@ -2,3 +2,11 @@ theme = "my-first-theme"
 baseURL = "https://blog.jiayu.co/"
 languageCode = "en-us"
 title = "Jiayu's Blog"
+
+[params]
+	author = "Jiayu Yi"	
+	bio = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
+	description = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
+
+[permalinks]
+  posts = "/:year/:month/:slug/"

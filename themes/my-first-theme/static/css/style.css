@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Merriweather', serif;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 
 code {
 	font-family: 'Source Code Pro', monospace;
+	word-break: break-word;
 }
 
 section, article, aside, footer, header, nav {
@@ -25,10 +27,21 @@ pre {
 	overflow-x: auto;
 }
 
+.navbar {
+	padding: 0.5em 0;
+	background: pink;
+}
+
+.navbar span {
+	font-family: 'Roboto', sans-serif;
+	margin-right: 1em;
+}
+
 .container {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0 1em;
 }
 
 .hgroup {

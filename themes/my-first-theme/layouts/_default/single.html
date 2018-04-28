@@ -1,6 +1,13 @@
 {{partial "header.html" .}}
 
 <body>
+    <nav class="navbar">
+        <section class="container">
+            <span><a href="/">Home</a></span>
+            <span><a href="https://www.jiayu.co/">About</a></span>
+        </section>
+    </nav>
+
     <div class="container">
         <header class="hgroup">
             <h4 class="details muted">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
