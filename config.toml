@@ -2,9 +2,11 @@ theme = "my-first-theme"
 baseURL = "https://blog.jiayu.co/"
 languageCode = "en-us"
 title = "Jiayu's Blog"
+copyright = "© $YEAR Jiayu Yi"
+pygmentsCodeFences = true
 
 [params]
-	author = "Jiayu Yi"	
+	author = "Jiayu Yi"
 	bio = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
 	description = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
 

@@ -1,27 +1,25 @@
-{{partial "header.html" .}}
+<!doctype html>
+<html lang=en>
+
+{{partial "head.html" .}}
 
 <body>
-    <nav class="navbar">
-        <section class="container">
-            <span>Home</span>
-            <span><a href="https://www.jiayu.co/">About</a></span>
-        </section>
-    </nav>
-    <div class="container">
-        <header class="hgroup">
-            <h1 class="title">{{ .Site.Title }}</h1>
-            <h2 class="subtitle">Blog subtitle</h2>
-        </header>
-        {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }}
-        <article>
-            <header class="hgroup">
-                <h4 class="details muted">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
-                <a href="{{ .RelPermalink }}"><h2 class="title">{{ .Title }}</h2></a> {{ with .Params.subtitle }}
-                <h3 class="subtitle muted">{{.}}</h3>{{end}}
-            </header>
-        </article>
-        {{ end }}
-    </div>
+<main class="container flex">
+  <header class="hgroup">
+    <h1 class="title">{{ .Site.Title }}</h1>
+    <h2 class="subtitle">Blog subtitle</h2>
+  </header>
+  {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }}
+  <article>
+    <header class="hgroup">
+      <h4 class="details">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
+      <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.subtitle }}<h3 class="subtitle">{{.}}</h3>{{end}}
+    </header>
+  </article>
+  {{ end }}
+</main>
+{{ partial "footer.html" . }}
 </body>
 
 </html>

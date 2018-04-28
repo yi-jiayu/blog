@@ -1,76 +1,106 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Merriweather:400,700,400i|Source+Code+Pro');
 
+:root {
+    --pink-50: #FCE4EC;
+    --pink-100: #F8BBD0;
+    --pink-200: #F48FB1;
+    --pink-500: #E91E63;
+}
+
 body {
-	font-family: 'Merriweather', serif;
-	margin: 0;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 code {
-	font-family: 'Source Code Pro', monospace;
-	word-break: break-word;
+    font-family: 'Source Code Pro', monospace;
+    word-break: break-word;
 }
 
 section, article, aside, footer, header, nav {
-  display: block;
+    display: block;
 }
 
 p {
-	line-height: 1.75;
+    line-height: 1.75;
+    word-break: break-word;
 }
 
 pre {
-	line-height: 1.5;
-	overflow-x: auto;
+    padding: 1em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
 }
 
 .navbar {
-	padding: 0.5em 0;
-	background: pink;
+    padding: 0.5em 0;
 }
 
-.navbar span {
-	font-family: 'Roboto', sans-serif;
-	margin-right: 1em;
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1em;
 }
 
 .container {
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 1em;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .hgroup {
-	margin-top: 1.25em;
-	margin-bottom: 1.25em;
+    margin: 1.25em 0;
 }
 
 .title {
-	margin: 0.1em 0;
+    margin: 0.1em 0;
 }
 
 .subtitle {
-	font-weight: normal;
-	margin: 0 0;
+    font-weight: normal;
+    margin: 0 0;
+    opacity: 0.75;
 }
 
 h2.subtitle {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h3.subtitle {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 
 .details {
-	font-weight: normal;
-	margin: 0 0;
+    font-weight: normal;
+    margin: 0 0;
+    opacity: 0.75;
 }
 
-.muted {
-	opacity: 0.8;
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: smaller;
+    opacity: 0.75;
+}
+
+.aside {
+    padding: 1em;
+}
+
+.flex {
+    flex: 1;
 }

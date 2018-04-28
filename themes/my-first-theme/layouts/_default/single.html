@@ -1,23 +1,20 @@
-{{partial "header.html" .}}
+<!doctype html>
+<html lang=en>
+
+{{partial "head.html" .}}
 
 <body>
-    <nav class="navbar">
-        <section class="container">
-            <span><a href="/">Home</a></span>
-            <span><a href="https://www.jiayu.co/">About</a></span>
-        </section>
-    </nav>
-
-    <div class="container">
-        <header class="hgroup">
-            <h4 class="details muted">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
-            <h1 class="title">{{ .Title }}</h1>
-            <h2 class="subtitle muted">{{ .Params.subtitle }}</h2>
-        </header>
-        <div>
-            {{ .Content }}
-        </div>
-    </div>
+<main class="container flex">
+  <header class="hgroup">
+    <h4 class="details">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
+    <h1 class="title">{{ .Title }}</h1>
+    <h2 class="subtitle">{{ .Params.subtitle }}</h2>
+  </header>
+  <div>
+    {{ .Content }}
+  </div>
+</main>
+{{ partial "footer.html" . }}
 </body>
 
 </html>
