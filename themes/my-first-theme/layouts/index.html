@@ -1,26 +1,20 @@
-<!doctype html>
-<html lang=en>
-
-<head>
-    <meta charset=utf-8>
-    <link rel="stylesheet" href="/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {{ .Hugo.Generator }}
-    <title>{{ .Site.Title }}</title>
-</head>
+{{partial "header.html" .}}
 
 <body>
-    <div class="content">
-        <h1>{{ .Site.Title }}</h1>
-        <div class="subtitle">A description</div>
-        <ul style="list-style-type: none;">
-            {{ range .Pages }}
-            <li>
-                <div>{{ .Date.Format "Jan 02" }} &middot; {{.ReadingTime}} min read</div>
-                <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a> {{ with .Params.subtitle }}
-                <div>{{.}}</div>{{end}}
-            </li>
-            {{ end }}
-        </ul>
+    <div class="container">
+        <header class="hgroup">
+            <h1 class="title">{{ .Site.Title }}</h1>
+            <h2 class="subtitle muted">A description</h2>
+        </header>
+        {{ range .Pages }}
+        <article>
+            <header class="hgroup">
+                <h4 class="details muted">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
+                <a href="{{ .RelPermalink }}"><h2 class="title">{{ .Title }}</h2></a>
+                {{ with .Params.subtitle }}<h3 class="subtitle muted">{{.}}</h3>{{end}}
+            </header>
+        </article>
+        {{ end }}
     </div>
 </body>
 

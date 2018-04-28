@@ -7,5 +7,7 @@ This is some body text after the heading.
 ## Subheading
 This is my first post!
 
+This is another paragraph.
+
 ### Subsubheading
 This is some **bold** text, and this is some *italic* text. This is some ***bold and italic*** text.

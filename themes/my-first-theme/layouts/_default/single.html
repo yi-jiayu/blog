@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang=en>
-
-<head>
-    <meta charset=utf-8>
-    <link rel="stylesheet" href="/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {{ .Hugo.Generator }}
-    <title>{{ .Title }}</title>
-</head>
+{{partial "header.html" .}}
 
 <body>
-    <div class="content">
-        <div class="heading">
-            <h1>{{ .Title }}</h1>
-            <div class="subtitle">{{ .Params.subtitle }}</div>
-        </div>
+    <div class="container">
+        <header class="hgroup">
+            <h4 class="details muted">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
+            <h1 class="title">{{ .Title }}</h1>
+            <h2 class="subtitle muted">{{ .Params.subtitle }}</h2>
+        </header>
         <div>
             {{ .Content }}
         </div>
