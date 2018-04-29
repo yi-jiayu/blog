@@ -7,13 +7,11 @@ date: 2018-04-28T13:45:03+08:00
 
 [Previously](https://medium.com/@jiayu./a-primer-on-markov-chains-2668d94032b1), we generated some new sentences from a small pool of existing sentences. Now, we'll generate some new comments based on all the existing comments in a Reddit thread!
 
----
-
+{{% aside %}}
 This post is a continuation of "A Primer on Markov Chains", which introduces Markov chains and how they can be used to generate text:
 
 https://medium.com/@jiayu./a-primer-on-markov-chains-2668d94032b1
-
----
+{{% /aside %}}
 
 After reading the daily r/singapore random discussion and small questions thread last week, I wondered if it would be possible to generate comments which looked like they came from there. Now, we'll be doing exactly that with today's thread:
 
@@ -85,3 +83,8 @@ for i in range(5):
 for i in range(3):
     print(text_model.make_short_sentence(140))
 ```
+
+### Markovify options
+> By default, `markovify.Text` tries to generate sentences that don't simply regurgitate chunks of the original text. The default rule is to suppress any generated sentences that exactly overlaps the original text by 15 words or 70% of the sentence's word count. You can change this rule by passing `max_overlap_ratio` and/or `max_overlap_total` to the `make_sentence` method. Alternatively you can disable this check entirely by passing `test_output` as False.
+>
+> {{< cite "Markovify README" >}}

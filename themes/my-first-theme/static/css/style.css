@@ -43,6 +43,22 @@ pre {
     border-radius: 0.25em;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--pink-500);
+}
+
+blockquote {
+    padding-left: 1em;
+    border-left: 4px solid var(--pink-500);
+    font-style: italic;
+}
+
+blockquote > footer {
+    text-align: right;
+}
+
 .navbar {
     padding: 0.5em 0;
 }
@@ -99,7 +115,10 @@ h3.subtitle {
 }
 
 .aside {
-    padding: 1em;
+    font-style: italic;
+    width: 75%;
+    margin: 0 auto;
+    opacity: 0.75;
 }
 
 .flex {
