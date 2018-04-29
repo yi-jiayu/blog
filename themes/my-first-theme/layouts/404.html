@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  <meta charset=utf-8>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/glitch.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ .Hugo.Generator }}
+
+  <title>Not Found - {{ .Site.Title }}</title>
+
+  <meta name="description" content="{{ .Site.Params.description }}">
+
+  <meta name="og:title" content="Not Found - {{ .Site.Title }}">
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="{{ .Site.BaseURL }}">
+  <meta name="og:site_name" content="{{ .Site.Title }}">
+  <meta name="og:description" content="{{ .Site.Params.description }}">
+</head>
+
+<body>
+{{ partial "navbar.html" . }}
+<div class="container">
+  <header class="hgroup">
+    <h1 class="title">Not Found</h1>
+    <h2 class="subtitle glitch" data-text="Scanner disabled; Location inaccurate.">Scanner disabled; Location
+      inaccurate.</h2>
+  </header>
+  <p>Return <a href="/">home</a>.</p>
+</div>
+</body>
+
+</html>
