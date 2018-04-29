@@ -47,7 +47,7 @@ Log in to your Reddit account and head to the bottom of https://www.reddit.com/p
 
 Take a look at the API usage guidelines, but don't worry about registering for production usage right now---we won't be doing anything that could be considered production usage.
 
-Make sure you've selected "script". Give your new application a name, description and put in an about url (perhaps this blog post? haha). The redirect url shouldn't matter for a script application, so put anything you want or just point it at localhost:
+Make sure you've selected "script". Give your new application a name, description and put in an about url (perhaps this blog post? haha). The redirect url shouldn't matter for a script application, so put anything you want or just point it at `localhost:`
 
 After you've created your application, you'll be able to obtain your OAuth2 client ID and secret. Your client ID is at the top right underneath the app name and type, and you can see your client secret in the "secret" field.
 

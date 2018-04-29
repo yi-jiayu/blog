@@ -34,6 +34,7 @@ p {
 }
 
 pre {
+    line-height: 1.5;
     background-color: var(--pink-50);
     padding: 1em;
     overflow-x: auto;
@@ -136,6 +137,6 @@ h3.subtitle {
     opacity: 0.75;
 }
 
-.flex {
+main.container {
     flex: 1;
 }
