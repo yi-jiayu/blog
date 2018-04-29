@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <section class="container">
+    <span class="nav-item brand">{{ .Site.Title }}</span>
+    <span class="nav-item">{{if .IsHome }}Home{{else}}<a href="/">Home</a>{{end}}</span>
+    <span class="nav-item about"><a href="https://www.jiayu.co/">About</a></span>
+  </section>
+</nav>

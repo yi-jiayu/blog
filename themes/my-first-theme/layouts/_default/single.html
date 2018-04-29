@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang=en>
 
-{{partial "head.html" .}}
+{{ partial "head.html" . }}
 
 <body>
+{{ partial "navbar.html" . }}
 <main class="container flex">
   <header class="hgroup">
     <h4 class="details">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
