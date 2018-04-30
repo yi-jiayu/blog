@@ -60,6 +60,7 @@ hr {
 blockquote {
   border-left: 4px solid var(--pink-500);
   font-style: italic;
+  margin-left: 0;
   padding-left: 1em;
 }
 
