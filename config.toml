@@ -10,6 +10,7 @@ pygmentsCodeFences = true
 	aboutURL = "https://www.jiayu.co/"
 	bio = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
 	description = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
+	notFoundFlavourText = "Scanner disabled; Location inaccurate"
 
 [permalinks]
   posts = "/:year/:month/:slug/"
