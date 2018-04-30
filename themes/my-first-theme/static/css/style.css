@@ -104,6 +104,11 @@ blockquote > footer {
   font-weight: bold;
 }
 
+.brand a {
+  color: currentColor;
+  text-decoration: none;
+}
+
 .about {
   margin-left: auto;
   margin-right: 0;
