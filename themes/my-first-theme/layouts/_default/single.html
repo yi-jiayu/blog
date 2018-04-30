@@ -6,14 +6,17 @@
 <body>
 {{ partial "navbar.html" . }}
 <main class="container">
-  <header class="hgroup">
-    <h4 class="details">{{ partial "time.html" .Date }} &middot; <span title="{{ .WordCount }} words">{{.ReadingTime}} min read</span></h4>
-    <h1 class="title">{{ .Title }}</h1>
-    <h2 class="subtitle">{{ .Params.subtitle }}</h2>
-  </header>
-  <div>
-    {{ .Content }}
-  </div>
+  <article>
+    <header class="hgroup article-header">
+      <h4 class="details">{{ partial "time.html" .Date }} &middot; <span title="{{ .WordCount }} words">{{.ReadingTime}} min read</span>
+      </h4>
+      <h1 class="title">{{ .Title }}</h1>
+      <h2 class="subtitle">{{ .Params.subtitle }}</h2>
+    </header>
+    <section class="article-body">
+      {{ .Content }}
+    </section>
+  </article>
 </main>
 {{ partial "footer.html" . }}
 </body>
