@@ -15,6 +15,12 @@ body {
   min-height: 100vh;
 }
 
+@media (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
@@ -61,6 +67,14 @@ blockquote > footer {
   text-align: right;
 }
 
+.article-list {
+  font-size: 16px;
+}
+
+.article-list article {
+  margin: 1.5em 0;
+}
+
 .navbar {
   margin-bottom: -1em;
 }
@@ -69,9 +83,8 @@ blockquote > footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
+  margin: 0 auto;
+  max-width: 800px;
   padding: 1em;
   width: 100%;
 }
@@ -138,16 +151,20 @@ h3.subtitle {
   width: 75%;
 }
 
-.a-linkpreview {
+.linkpreview a {
   color: currentColor;
   text-decoration: none;
 }
 
-.linkpreview {
+.linkpreview div {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 1.5em 1em;
   padding: 1.5em;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.linkpreview div:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .linkpreview h1 {

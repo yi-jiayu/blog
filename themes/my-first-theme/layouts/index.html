@@ -10,15 +10,18 @@
     <h1 class="title">{{ .Site.Title }}</h1>
     <h2 class="subtitle">Blog subtitle</h2>
   </header>
-  {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }}
-  <article>
-    <header class="hgroup">
-      <h4 class="details">{{ partial "time.html" .Date }} &middot; {{.ReadingTime}} min read</h4>
-      <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      {{ with .Params.subtitle }}<h3 class="subtitle">{{.}}</h3>{{end}}
-    </header>
-  </article>
-  {{ end }}
+  <section class="article-list">
+    {{ template "_internal/pagination.html" . }} {{ range .Paginator.Pages }}
+    <article>
+      <header>
+        <h4 class="details">{{ partial "time.html" .Date }} &middot; <span title="{{ .WordCount }} words">{{.ReadingTime}} min read</span>
+        </h4>
+        <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with .Params.subtitle }}<h3 class="subtitle">{{.}}</h3>{{end}}
+      </header>
+    </article>
+    {{ end }}
+  </section>
 </main>
 {{ partial "footer.html" . }}
 </body>

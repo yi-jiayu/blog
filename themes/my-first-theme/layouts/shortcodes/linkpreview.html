@@ -1,9 +1,9 @@
-<div>
-  <a href="{{ .Get 2 }}" class="a-linkpreview">
-    <section class="linkpreview">
+<section class="linkpreview">
+  <a href="{{ .Get 2 }}">
+    <div class="card" title="{{ .Get 0 }}">
       <h1>{{ .Get 0 }}</h1>
       <h2>{{ .Get 1 }}</h2>
       <h3>{{ .Get 2 }}</h3>
-    </section>
+    </div>
   </a>
-</div>
+</section>
