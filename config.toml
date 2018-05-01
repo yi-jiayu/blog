@@ -11,6 +11,8 @@ pygmentsCodeFences = true
 	bio = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
 	description = "Singapore University of Technology and Design graduate. https://www.jiayu.co"
 	notFoundFlavourText = "Scanner disabled; Location inaccurate"
+	sourceCode = "https://github.com/yi-jiayu/blog"
+	medium = "https://medium.com/@jiayu."
 
 [permalinks]
   posts = "/:year/:month/:slug/"
