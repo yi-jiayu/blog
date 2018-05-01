@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Merriweather:400,700,400i,700i|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Lora:400,700,400i,700i|Source+Code+Pro');
 
 :root {
   --pink-50: #fce4ec;
   --pink-100: #f8bbd0;
   --pink-200: #f48fb1;
   --pink-500: #e91e63;
+  --serif-font: 'Lora';
+  --sans-serif-font: 'Roboto';
+  --monospace-font: 'Source Code Pro';
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Merriweather', serif;
+  font-family: var(--serif-font), serif;
   margin: 0;
   min-height: 100vh;
 }
@@ -22,11 +25,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sans-serif-font), sans-serif;
 }
 
 code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: var(--monospace-font), monospace;
   word-break: break-word;
 }
 
@@ -101,7 +104,7 @@ nav .container {
 }
 
 .nav-item {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sans-serif-font), sans-serif;
   margin-right: 1em;
 }
 
@@ -172,7 +175,7 @@ h3.subtitle {
 }
 
 .copyright {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sans-serif-font), sans-serif;
   font-size: smaller;
   opacity: 0.75;
   text-align: center;
@@ -186,7 +189,7 @@ h3.subtitle {
 }
 
 .caption {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sans-serif-font), sans-serif;
   font-size: 0.75em;
   margin-top: -1em;
   opacity: 0.75;
@@ -205,7 +208,7 @@ blockquote.linkpreview-card {
 
 .linkpreview-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--sans-serif-font), sans-serif;
   margin: 1.5em 1em;
   padding: 1.5em;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
