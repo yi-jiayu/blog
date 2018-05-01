@@ -1,4 +1,4 @@
-theme = "my-first-theme"
+theme = "moonlight"
 baseURL = "https://blog.jiayu.co/"
 languageCode = "en-us"
 title = "Jiayu's Blog"
