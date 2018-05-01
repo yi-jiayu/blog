@@ -2,7 +2,7 @@ theme = "my-first-theme"
 baseURL = "https://blog.jiayu.co/"
 languageCode = "en-us"
 title = "Jiayu's Blog"
-copyright = "© $YEAR Jiayu Yi"
+copyright = "2018 Jiayu Yi"
 pygmentsCodeFences = true
 
 [params]
