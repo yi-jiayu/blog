@@ -76,8 +76,12 @@ blockquote > footer {
   margin: 1.5em 0;
 }
 
-.navbar {
+.navbar-top {
   margin-bottom: -1em;
+}
+
+.navbar-bottom {
+  font-size: smaller;
 }
 
 .container {
@@ -90,7 +94,7 @@ blockquote > footer {
   width: 100%;
 }
 
-.navbar .container {
+nav .container {
   align-items: baseline;
   display: flex;
   justify-content: flex-start;
@@ -110,8 +114,12 @@ blockquote > footer {
   text-decoration: none;
 }
 
-.about {
+.right {
   margin-left: auto;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 .hgroup {
