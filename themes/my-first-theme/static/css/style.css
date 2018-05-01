@@ -185,33 +185,36 @@ h3.subtitle {
   text-align: center;
 }
 
+blockquote.linkpreview-card {
+  border: none;
+  font-style: normal;
+}
+
 .linkpreview a {
   color: currentColor;
   text-decoration: none;
 }
 
-.linkpreview div {
+.linkpreview-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-family: 'Roboto', sans-serif;
   margin: 1.5em 1em;
   padding: 1.5em;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.linkpreview div:hover {
+.linkpreview-card:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.linkpreview h1 {
-  font-size: 1em;
-  margin: 0;
+.linkpreview-title {
+  font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.linkpreview h2 {
-  font-size: 1em;
-  font-weight: normal;
+.linkpreview-description {
   margin: 0.15em 0;
   opacity: 0.75;
   overflow: hidden;
@@ -219,10 +222,8 @@ h3.subtitle {
   white-space: nowrap;
 }
 
-.linkpreview h3 {
+.linkpreview-url {
   font-size: 0.8em;
-  font-weight: normal;
-  margin: 0;
   opacity: 0.75;
   overflow: hidden;
   text-overflow: ellipsis;

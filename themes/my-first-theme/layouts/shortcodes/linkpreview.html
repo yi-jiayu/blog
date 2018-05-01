@@ -1,9 +1,9 @@
 <section class="linkpreview">
   <a href="{{ .Get 2 }}">
-    <div class="card" title="{{ .Get 0 }}">
-      <h1>{{ .Get 0 }}</h1>
-      <h2>{{ .Get 1 }}</h2>
-      <h3>{{ .Get 2 }}</h3>
-    </div>
+    <blockquote class="linkpreview-card" title="{{ .Get 0 }}">
+      <div class="linkpreview-title">{{ .Get 0 }}</div>
+      <div class="linkpreview-description">{{ .Get 1 }}</div>
+      <div class="linkpreview-url">{{ .Get 2 }}</div>
+    </blockquote>
   </a>
 </section>
