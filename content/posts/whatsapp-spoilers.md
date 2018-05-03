@@ -2,6 +2,7 @@
 title: "Whatsapp Spoilers"
 subtitle: "Fun with zero-width spaces in WhatsApp"
 date: 2018-05-02T21:57:51+08:00
+lastmod: 2018-05-03T10:11:10+08:00
 ---
 
 On Reddit or other forums, you'll often come across spoiler tags <span class="spoiler">which may look a bit like this</span>. They're used to discuss spoilers while protecting other readers who do not wish to be spoiled by requiring them to actively interact with the spoiler tag to view its contents.
@@ -39,8 +40,12 @@ function createSpoilerMessage() {
 
 After setting a spoiler warning to be shown before the spoiler (`warning`) and the actual content of the spoiler (`content`), we add 4000 zero-width spaces (for safety---around 3100 seems to be enough on WhatsApp Web, but more are needed on mobile) between the two and display the result for the user to copy.
 
-### Caveat
-There's one slight problem though: on WhatsApp Web, the spoiler still appears in the chat preview:
+### Caveats
+There are some side effects with this hack though.
+
+Firstly, adding 4000 zero-width spaces makes the message length more than 4000 characters long. In fact, because a zero-width space is encoded under UTF-8 as 3 bytes (`E2 80 8B`), a message with a spoiler tag may actually be larger than 12 kB in size! It actually causes some unexpected behavior in WhatsApp, such as truncated message histories or just a general slowdown.
+
+Also, on WhatsApp Web, the spoiler still appears in the chat preview:
 
 {{< figure src="/posts/images/movie-spoilers.png" alt="Spoiler contents are visible in the chat preview" link="/posts/images/movie-spoilers.png" >}}
 
