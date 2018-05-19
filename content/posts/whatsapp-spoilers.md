@@ -3,6 +3,7 @@ title: "Whatsapp Spoilers"
 subtitle: "Fun with zero-width spaces in WhatsApp"
 date: 2018-05-02T21:57:51+08:00
 lastmod: 2018-05-03T10:11:10+08:00
+tags: ["WhatsApp", "JavaScript"]
 ---
 
 On Reddit or other forums, you'll often come across spoiler tags <span class="spoiler">which may look a bit like this</span>. They're used to discuss spoilers while protecting other readers who do not wish to be spoiled by requiring them to actively interact with the spoiler tag to view its contents.

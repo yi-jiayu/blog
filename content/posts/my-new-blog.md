@@ -2,6 +2,7 @@
 title: "My New Blog"
 subtitle: "Moving away from Medium (but not too far)"
 date: 2018-04-29T15:32:50+08:00
+tags: ["Blogging", "Medium"]
 ---
 
 ## One year ago
