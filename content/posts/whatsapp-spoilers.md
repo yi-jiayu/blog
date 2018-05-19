@@ -1,5 +1,5 @@
 ---
-title: "Whatsapp Spoilers"
+title: "WhatsApp Spoilers"
 subtitle: "Fun with zero-width spaces in WhatsApp"
 date: 2018-05-02T21:57:51+08:00
 lastmod: 2018-05-03T10:11:10+08:00
