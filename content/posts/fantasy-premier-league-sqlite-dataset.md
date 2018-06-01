@@ -183,7 +183,7 @@ def generate_create_table_query(example, table_name):
 
         columns.append(f'  {column_name} {type_name}')
 
-    query = f'create table {table_name} (\n'
+    query = f'CREATE TABLE {table_name} (\n'
     query += ',\n'.join(columns)
     query += '\n)'
 
@@ -260,7 +260,7 @@ It would be similarly tedious to write out all the necessary `INSERT` statements
 ```python
 def insert(conn, table_name, item):
     num_columns = len(item)
-    query = f' insert into {table_name} values ({", ".join("?" * num_columns)})'
+    query = f'INSERT INTO {table_name} VALUES ({", ".join("?" * num_columns)})'
     values = item.values()
 
     c = conn.cursor()
