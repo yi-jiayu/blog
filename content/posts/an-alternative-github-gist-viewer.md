@@ -1,5 +1,5 @@
 ---
-title: "An alternative Github Gist viewer"
+title: "An alternative GitHub Gist viewer"
 subtitle: "In case your corporate proxy blocks gists"
 date: 2018-06-13 00:00:27+08:00
 tags: ["GitHub", "Gist", "git", "HTML", "JavaScript"]
