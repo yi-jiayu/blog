@@ -30,7 +30,8 @@ This allows you to view gists even if `gist.github.com` is blocked, and, since i
 
 ### Source
 
-Essence is on GitHub at https://github.com/yi-jiayu/essence.
+Find Essence on GitHub:
+{{< linkpreview title="yi-jiayu/essence" description="View GitHub gists behind a proxy" url="https://github.com/yi-jiayu/essence" >}}
 
 ## Things I learnt along the way
 ### Anatomy of a raw gist URL
@@ -56,24 +57,24 @@ all lead to the same file.
 While looking into the significance of the various parts of the raw gist URLs, I learnt about the [`git-cat-file`](https://git-scm.com/docs/git-cat-file) command:
 
 ```
-jiayu@lileep ~> set tmpdir (mktemp -d)
-jiayu@lileep ~> git clone https://gist.github.com/89d5530b693dcde89fdfa9d4dd421863.git $tmpdir
+$ tmpdir=$(mktemp -d)
+$ git clone https://gist.github.com/89d5530b693dcde89fdfa9d4dd421863.git $tmpdir
 Cloning into '/tmp/tmp.5O8PrhMFSz'...
 remote: Counting objects: 27, done.
 remote: Total 27 (delta 0), reused 0 (delta 0), pack-reused 27
 Unpacking objects: 100% (27/27), done.
-jiayu@lileep ~> cd $tmpdir
-jiayu@lileep /t/tmp.5O8PrhMFSz> git cat-file -t 265fe21e0930c18dace1f8da4941fbbe47ba4905
+$ cd $tmpdir
+$ git cat-file -t 265fe21e0930c18dace1f8da4941fbbe47ba4905
 commit
-jiayu@lileep /t/tmp.5O8PrhMFSz> git cat-file -p 265fe21e0930c18dace1f8da4941fbbe47ba4905
+$ git cat-file -p 265fe21e0930c18dace1f8da4941fbbe47ba4905
 tree cc3dd4db2bada8494b9718b0d76ac09624074bc8
 parent c6b728a0f7e08c8677d133e62fba3cfe35d71b1c
 author Jiayu Yi <yi-jiayu@users.noreply.github.com> 1526828087 +0800
 committer GitHub <noreply@github.com> 1526828087 +0800
 
-jiayu@lileep /t/tmp.5O8PrhMFSz> git cat-file -t c16ad4ac4597a57876ded6e1288e89efd8e4f532
+$ git cat-file -t c16ad4ac4597a57876ded6e1288e89efd8e4f532
 blob
-jiayu@lileep /t/tmp.5O8PrhMFSz> git cat-file -p c16ad4ac4597a57876ded6e1288e89efd8e4f532
+$ git cat-file -p c16ad4ac4597a57876ded6e1288e89efd8e4f532
 {
  "cells": [
   {
@@ -81,29 +82,32 @@ jiayu@lileep /t/tmp.5O8PrhMFSz> git cat-file -p c16ad4ac4597a57876ded6e1288e89ef
  "nbformat": 4,
  "nbformat_minor": 2
 }
-jiayu@lileep /t/tmp.5O8PrhMFSz>
+$
 ```
 
 ### HTML5 form data validation
 
 I got stuck on this for a while wondering why my regular expression to match a GitHub gist ID:
 ```
-PS jiayu@lileep ~> node
-> /(?:^|\/)([a-f0-9]+)$/.exec('https://gist.github.com/yi-jiayu/89d5530b693dcde89fdfa9d4dd421863')
+$ node
+> const regexp = /(?:^|\/)([a-f0-9]+)$/
+undefined
+> regexp.exec('https://gist.github.com/yi-jiayu/89d5530b693dcde89fdfa9d4dd421863')
 [ '/89d5530b693dcde89fdfa9d4dd421863',
   '89d5530b693dcde89fdfa9d4dd421863',
   index: 32,
   input: 'https://gist.github.com/yi-jiayu/89d5530b693dcde89fdfa9d4dd421863' ]
-> /(?:^|\/)([a-f0-9]+)$/.exec('89d5530b693dcde89fdfa9d4dd421863')
+> regexp.exec('89d5530b693dcde89fdfa9d4dd421863')
 [ '89d5530b693dcde89fdfa9d4dd421863',
   '89d5530b693dcde89fdfa9d4dd421863',
   index: 0,
   input: '89d5530b693dcde89fdfa9d4dd421863' ]
-> /(?:^|\/)([a-f0-9]+)$/.exec('https://blog.jiayu.co/2018/06/an-alternative-github-gist-viewer/')
+> regexp.exec('https://blog.jiayu.co/2018/06/an-alternative-github-gist-viewer/')
 null
-> /(?:^|\/)([a-f0-9]+)$/.exec('not-a-gist-id')
+> regexp.exec('not-a-gist-id')
 null
-PS jiayu@lileep ~>
+> 
+$
 ```
 wasn't working in my `<input>` element's [`pattern`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-pattern) attribute:
 ```html
