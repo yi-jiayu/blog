@@ -3,7 +3,7 @@ title: "A minimal representation of the SUTD logo"
 slug: "a-minimal-representation-of-the-sutd-logo"
 subtitle: "Working with PBM images and ImageMagick"
 date: 2018-06-17T15:41:50+08:00
-tags: ["graphics", "ImageMagick", "SUTD"]
+tags: ["graphics", "ImageMagick", "SUTD", "Logo"]
 ---
 
 I've always been a fan of geometric patterns. When I was younger I used to draw [Sierpinski
@@ -113,7 +113,9 @@ That's an actual size, 39x9 PNG image.
 
 Let's make it 10 times bigger using the `-scale` resize operator:
 
-```convert SUTD.pbm -scale 1000% SUTD-larger.png```
+```
+convert SUTD.pbm -scale 1000% SUTD-larger.png
+```
 
 {{< figure src="/images/SUTD-larger.png" alt="SUTD logo in black with white background" class="transparency-grid" link="/images/SUTD-larger.png" >}}
 
