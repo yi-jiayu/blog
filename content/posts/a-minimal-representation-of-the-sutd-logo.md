@@ -1,7 +1,7 @@
 ---
-title: "A minimal representation of the SUTD logo"
+title: "A compact representation of the SUTD logo"
 slug: "a-minimal-representation-of-the-sutd-logo"
-subtitle: "Working with PBM images and ImageMagick"
+subtitle: "Playing with PBM images and ImageMagick"
 date: 2018-06-17T15:41:50+08:00
 tags: ["graphics", "ImageMagick", "SUTD", "Logo"]
 ---
@@ -43,7 +43,7 @@ For example, we can represent the letter S with 1s and 0s like this, and you can
 1 1 1 1 1 1 1 1 1
 ```
 
-Since a minimal encoding like this is enough to fully define the SUTD logo, we should be able to generate the more
+Since a compact encoding like this is enough to fully define the SUTD logo, we should be able to generate the more
 mainstream versions of it from from this as well, with no loss of information.
 
 ## The PBM file format
