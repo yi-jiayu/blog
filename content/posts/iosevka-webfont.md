@@ -190,7 +190,4 @@ and writing this post afterwards:
 
 {{< linkpreview title="Host your own web fonts" description="Mike Solomon" url="https://msol.io/blog/tech/host-your-own-web-fonts/" >}}
 
-[^1]: According to [CSS-Tricks](https://css-tricks.com/dont-just-copy-the-font-face-out-of-google-fonts-urls/),
-Google Fonts is pretty fancy and does things like varying the exact contents of the loaded CSS depending on
-browser. For example, `woff2` is a relatively new format and `woff2` URLs may not be included when requested by
-an older browser which doesn't support it.
+[^1]: According to [CSS-Tricks](https://css-tricks.com/dont-just-copy-the-font-face-out-of-google-fonts-urls/), Google Fonts is pretty fancy and does things like varying the exact contents of the loaded CSS depending on browser. For example, `woff2` is a relatively new format and `woff2` URLs may not be included when requested by an older browser which doesn't support it.
