@@ -1,5 +1,5 @@
 ---
-title: "vi Mode"
+title: "vi mode"
 subtitle: "Supporting vi commands for navigation on my blog"
 date: 2018-08-08T23:46:54+08:00
 ---
