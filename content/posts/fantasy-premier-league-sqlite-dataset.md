@@ -26,6 +26,7 @@ from players p left join teams t on p.team = t.id
 group by p.team;
 ```
 
+{{% overflow-x %}}
 | web_name    | club           | position | total_points | cost |
 |:------------|:---------------|:---------|-------------:|-----:|
 | Salah       | Liverpool      | MID      |          303 | 10.6 |
@@ -48,6 +49,7 @@ group by p.team;
 | Foster      | West Brom      | GKP      |          123 |  4.3 |
 | Tadic       | Southampton    | MID      |          122 |  6.2 |
 | Begovic     | Bournemouth    | GKP      |          112 |  4.5 |
+{{% /overflow-x %}}
 
 Check out some more [sample queries and results](https://github.com/yi-jiayu/FPL/blob/master/sample-queries.md).
 

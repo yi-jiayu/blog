@@ -60,9 +60,11 @@ possible combinations of state transitions and hence rules for elementary cellul
 The numbering system for rules is known as the [Wolfram code](https://en.wikipedia.org/wiki/Wolfram_code) and
 comes from the representation of the state transitions in binary:
 
+{{% overflow-x %}}
 | Previous state | 110 | 110 | 101 | 100 | 011 | 010 | 001 | 000 |
 |----------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Next state     |  0  |  0  |  1  |  1  |  1  |  1  |  0  |  0  |
+{{% /overflow-x %}}
 
 If we interpret the 8 resulting states as a binary number, we get 00111100---or 60 in decimal---hence the labelling
 of this rule as rule 60.
