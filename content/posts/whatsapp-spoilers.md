@@ -37,7 +37,7 @@ function createSpoilerMessage() {
   document.getElementById('message').value = message;
 }
 ```
-{{< caption "What's wrong with inline JavaScript?" >}}
+{{< caption >}}What's wrong with inline JavaScript?{{< /caption >}}
 
 After setting a spoiler warning to be shown before the spoiler (`warning`) and the actual content of the spoiler (`content`), we add 4000 zero-width spaces (for safety---around 3100 seems to be enough on WhatsApp Web, but more are needed on mobile) between the two and display the result for the user to copy.
 

@@ -11,7 +11,7 @@ In June last year, I started a blog on Medium and wrote my first post on the hig
 {{< linkpreview "Sentiment Analysis of Comments on LHL’s Facebook Page" 
 "Learning how to use the Facebook Graph API and Google Cloud Natural Language API" 
 "https://medium.com/google-cloud/sentiment-analysis-of-comments-on-lhls-facebook-page-9db8b3a60eb3" >}}
-{{< caption "My first blog post" >}}
+{{< caption >}}My first blog post{{< /caption >}}
 
 Despite the provocative topic, it was really just a post about how to download comments from the Facebook Graph API and perform some sentiment analysis using the Google Cloud Natural Language API. Nevertheless, I was surprised by the reception my post received: Tech in Asia invited me to [republish it on their site](https://www.techinasia.com/feel-lee-hsien-loong-code), [Asiaone](http://www.asiaone.com/singapore/computer-science-student-analyses-pm-lees-facebook-comments-public-feud-and-what-he-got) and [Lianhe Zaobao](http://www.zaobao.com.sg/special/report/singapore/38oxley/feature/story20170630-775425) ran articles about me, it was added to the official [Google Cloud Platform publication on Medium](https://medium.com/google-cloud), and it even attracted [3 pages of discussion on EDMW](https://archive.is/4gxUt).
 
@@ -23,7 +23,7 @@ Naturally, not all the feedback was positive and I felt that my article was bein
 > 
 > He is an opportunist wanting to show off his skillset, but highlighted his own shortcoming when he chose wrong source of data ~
 
-{{< caption "Some choice comments I found" >}}
+{{< caption >}}Some choice comments I found{{< /caption >}}
 
 However, I couldn't help but feel slightly flattered by the attention and also thought that writing was quite fun, having been thinking of starting a blog for some time already as a way to build my brand, so I continued to write on Medium.
 

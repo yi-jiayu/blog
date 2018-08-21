@@ -156,7 +156,7 @@ The objects returned by the FPL API are quite comprehensive, with some of them--
   "team": 10
 }
 ```
-{{< caption "I am going to work on collapsible code blocks for my blog theme next." >}}
+{{< caption >}}I am going to work on collapsible code blocks for my blog theme next.{{< /caption >}}
 
 It would be tedious to create tables with so many columns by hand. Fortunately, the data was well structured---the objects were all flat or mostly flat and attribute values only came in 4 different types (integer, real, string and boolean)---so the table creation could be automated.
 
