@@ -5,9 +5,10 @@ date: 2018-08-21T18:19:27+08:00
 ---
 
 {{% aside %}}
-After my [previous post on PBM and PNG images and ImageMagick](https://blog.jiayu.co/2018/06/a-minimal-representation-of-the-sutd-logo/), I was interested in doing some more image manipulation,
-and decided to explore ways to create PNG files by generating visualisations of elementary cellular automata. This
-post provides some background information about cellular automata before that.
+After my [previous post on PBM and PNG images and ImageMagick](https://blog.jiayu.co/2018/06/a-minimal-representation-of-the-sutd-logo/), 
+I was interested in doing some more image manipulation, and decided to explore ways to create PNG files by generating 
+visualisations of elementary cellular automata. This post provides some background information about cellular automata 
+before that.
 {{% /aside %}}
 
 A cellular automaton is a is a pattern of cells on a grid, in which the state of each cell changes over multiple
