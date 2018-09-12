@@ -1,6 +1,7 @@
 ---
 title: "Privacy"
 date: 2018-09-12T12:18:57+08:00
+description: "Privacy policy for blog.jiayu.co"
 ---
 
 ## Third-party products and services
