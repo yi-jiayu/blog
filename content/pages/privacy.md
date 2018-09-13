@@ -8,7 +8,7 @@ description: "Privacy policy for blog.jiayu.co"
 
 ### Google Analytics
 
-This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/). IP addresses are [anonymised](https://support.google.com/analytics/answer/2763052). See this page for more details:
+This site uses [Google Analytics](https://marketingpl   atform.google.com/about/analytics/). IP addresses are [anonymised](https://support.google.com/analytics/answer/2763052). See this page for more information:
 
 {{< linkpreview title="How Google uses information from sites or apps that use our services" description="Privacy & Terms – Google" url="https://www.google.com/policies/privacy/partners/" >}} 
 
@@ -24,12 +24,4 @@ This site is hosted on [Netlify](https://www.netlify.com/). View Netlify's [priv
 
 ### Workbox
 
-This site uses a service worker based on [Workbox](https://developers.google.com/web/tools/workbox/). 
-
-{{< linkpreview title="Workbox | Google Developers" description="Workbox is a set of service worker libraries that making build progressive web apps easy." url="https://developers.google.com/web/tools/workbox/" >}}
-
-The Workbox source code can be found on [GitHub](https://github.com/GoogleChrome/workbox).
- 
-{{< linkpreview title="GoogleChrome/workbox" description="📦 Workbox: JavaScript libraries for Progressive Web Apps" url="https://github.com/GoogleChrome/workbox" >}}
- 
-The Workbox script on this site is served from an external CDN under https://storage.googleapis.com.
+This site uses a service worker based on [Workbox](https://developers.google.com/web/tools/workbox/). The Workbox source code can be found on [GitHub](https://github.com/GoogleChrome/workbox). The Workbox script on this site is served from an external CDN under https://storage.googleapis.com.
