@@ -9,7 +9,7 @@ url: /privacy
 
 ### Google Analytics
 
-This site uses [Google Analytics](https://marketingpl   atform.google.com/about/analytics/). IP addresses are [anonymised](https://support.google.com/analytics/answer/2763052). See this page for more information:
+This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/). IP addresses are [anonymised](https://support.google.com/analytics/answer/2763052). See this page for more information:
 
 {{< linkpreview title="How Google uses information from sites or apps that use our services" description="Privacy & Terms – Google" url="https://www.google.com/policies/privacy/partners/" >}} 
 
