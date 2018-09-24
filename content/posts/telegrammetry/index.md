@@ -1,6 +1,7 @@
 ---
 title: "Telegrammetry: Stats for Telegram"
 subtitle: "Get insights into your Telegram activity"
+image: "dashboard.png"
 date: 2018-09-24T16:06:17+08:00
 ---
 
