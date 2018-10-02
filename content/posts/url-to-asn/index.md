@@ -1,7 +1,7 @@
 ---
 title: "Quick URL to ASN lookups"
 subtitle: "Querying ASN information through URLs instead of IP addresses"
-date: 2018-10-02T12:43+05:30
+date: 2018-10-02T12:43:17+05:30
 ---
 
 I'm often curious about how various websites are hosted. One piece of information which can give you a clue is the [autonomous system (AS)](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) which the IP of the website falls under. We can use a combination of tools to find this.
