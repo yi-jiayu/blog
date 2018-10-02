@@ -41,7 +41,7 @@ $ dig +short AS14061.asn.cymru.com TXT
 
 Whichever method we use, we find out that my blog is being served from a [DigitalOcean](https://www.digitalocean.com/) IP address. Does this mean that I'm running it off a personal VPS?
 
-Nope, it's actually hosted by [Netlify](https://www.netlify.com/). But with this information, we can guess that Netlify uses DigitalOcean servers for some of its traffic. Not unexpected, since they just wrote about how they [migrated to a fully multi-cloud architecture](https://www.netlify.com/blog/2018/05/14/how-netlify-migrated-to-a-fully-multi-cloud-infrastructure/) earlier this year.
+Nope, it's actually hosted by [Netlify](https://www.netlify.com/). But with this information, we can infer that Netlify uses DigitalOcean servers for some of its traffic. (Not unexpected, since they just wrote about how they [migrated to a fully multi-cloud architecture](https://www.netlify.com/blog/2018/05/14/how-netlify-migrated-to-a-fully-multi-cloud-infrastructure/) earlier this year.)
 
 ## Skipping steps
 
@@ -181,7 +181,7 @@ Error: no ASN or IP match on line 3.
 13335   | 104.18.130.189   | 104.18.128.0/20     | US | arin     | 2014-03-28 | CLOUDFLARENET - Cloudflare, Inc., US
 ...
 13335   | 104.18.128.189   | 104.18.128.0/20     | US | arin     | 2014-03-28 | CLOUDFLARENET - Cloudflare, Inc., US
-yijiayu@cradily:~$ asn www.reddit.com
+$ asn www.reddit.com
 Bulk mode; whois.cymru.com [2018-10-02 05:19:48 +0000]
 Error: no ASN or IP match on line 3.
 54113   | 151.101.37.140   | 151.101.36.0/22     | US | arin     | 2016-02-01 | FASTLY - Fastly, US]
@@ -191,7 +191,7 @@ Error: no ASN or IP match on line 3.
 
 It's important to remember that the ubiquitous `wwww` in front of many websites is a subdomain just like `blog` in `blog.jiayu.co`. The `www` version of a URL can have its own `A` and `AAAA` records and resolve to an entirely different IP from the non-`www` version. Usually, but not always, the `www` version of a URL is used for the website you visit in a browser. This is why we get different results for `apple.com` and `www.apple.com`, and `airbnb.com` and `www.airbnb.com`.
 
-Finally, an interesting side-effect of the role of location in DNS queries:
+Finally, an example of the role of location in DNS queries:
 
 ```console
 $ asn www.gov.sg
@@ -199,7 +199,7 @@ AS      | IP               | BGP Prefix          | CC | Registry | Allocated  | 
 9498    | 23.35.1.75       | 23.35.0.0/20        | US | arin     | 2011-05-16 | BBIL-AP BHARTI Airtel Ltd., IN
 ```
 
-Oh? Is the Singapore government website is served from an Indian ISP?
+Oh? Is the Singapore government website is served from an Indian ISP? Let's take a closer look with `dig`:
 
 ```console
 $ dig www.gov.sg
@@ -246,11 +246,11 @@ ns1-188.akam.net.	100089	IN	AAAA	2600:1401:2::bc
 ;; MSG SIZE  rcvd: 406
 ```
 
-Turns out that it's also behind Akamai, and I was probably redirected to a closer edge node since I happened to be in India.
+Turns out that it's also behind Akamai, and I was probably served from a closer edge node since I happened to be in India.
 
 ## Final notes
 
-Besides the AS name, another hint about the infrastructure behind a website is the DNS name server. If we look at the full `dig` output for this site:
+Besides the AS name, another hint about the infrastructure behind a website is the DNS name server. Here's the full `dig` output for this site:
 
 ```console
 $ dig blog.jiayu.co
@@ -300,7 +300,7 @@ ns04.netlifydns.com.	622	IN	AAAA	2607:f740:e630:c::1
 ;; MSG SIZE  rcvd: 522
 ```
 
-We can see "netlify" all over the output, even though we couldn't tell from the AS name.
+Netlify actually appears all over the output, even though we couldn't tell from the AS name (in fact, Netlify already appeared in this site's CNAME record right at the start of this post).
 
 ## Appendix
 
