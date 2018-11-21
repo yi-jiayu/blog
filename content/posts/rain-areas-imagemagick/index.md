@@ -79,6 +79,8 @@ $ composite \
 
 - The `-blend` flag sets the opacity of the overlay to 50%, so that we can see through it.
 
+You can read more about composing images with ImageMagick [here](http://www.imagemagick.org/Usage/compose/).
+
 This gives us the following result:
 
 {{< figure src="overlaid.png" >}}
@@ -107,9 +109,13 @@ $ convert overlaid.png \
 
 - The next argument to `-annotate` is the actual text to be added. In this case it is the RFC 1123-compliant timestamp of the radar overlay. The backslash causes the leading space to be included in the added text, creating a bit more space in the bounding box. The trailing space is there for the same reason, but does not need to be escaped.
 
-This is the final result with our timestamp:
+You can read more about annotating images with ImageMagick [here](http://www.imagemagick.org/Usage/annotating/).
+
+Here is the final result with a timestamp:
 
 {{< figure src="timestamped.png" >}}
+
+You can find a comprehensive list of ImageMagick command-line options [here](https://imagemagick.org/script/command-line-options.php).
 
 ## Final thoughts
 
@@ -117,7 +123,7 @@ I've really liked the rain areas map since I first found out about it, and had t
 
 As a proof of concept, and an experiment in building a Clojure application, I made a [Telegram bot](https://t.me/WeatherSG_Bot) and [website](https://weathersg-bot.jiayu.io/) for getting the latest rain areas as an image:
 
-{{< figure src="telegram.png" class="nooutline" >}}
+{{< figure src="telegram.png" class="nooutline" link="https://t.me/WeatherSG_Bot" target="_blank" >}}
 
 {{< linkpreview title="Rain areas" description="Rain areas" url="https://weathersg-bot.jiayu.io/rain-areas" >}}
 
