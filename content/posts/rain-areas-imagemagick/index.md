@@ -1,8 +1,7 @@
 ---
 title: "Radar overlay and timestamping with ImageMagick"
 subtitle: "Creating shareable rain area maps of Singapore"
-date: 2018-11-19T11:31:17+08:00
-draft: true
+date: 2018-11-22T00:35:30+08:00
 ---
 
 On the [Rain Areas](http://www.weather.gov.sg/weather-rain-area-50km/) page at the Meteorological Service Singapore website, you can see exactly where it's raining in Singapore at the moment:
