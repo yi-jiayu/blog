@@ -1,6 +1,7 @@
 ---
 title: "Radar overlay and timestamping with ImageMagick"
 subtitle: "Creating shareable rain area maps of Singapore"
+image: "timestamped.png"
 date: 2018-11-22T00:35:30+08:00
 ---
 
