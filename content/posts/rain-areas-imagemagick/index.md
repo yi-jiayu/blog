@@ -7,19 +7,19 @@ date: 2018-11-22T00:35:30+08:00
 
 On the [Rain Areas](http://www.weather.gov.sg/weather-rain-area-50km/) page at the Meteorological Service Singapore website, you can see exactly where it's raining in Singapore at the moment:
 
-{{< figure src="screenshot.png" link="http://www.weather.gov.sg/weather-rain-area-50km/" caption="http://www.weather.gov.sg/weather-rain-area-50km/" target="_blank" >}}
+{{< figure src="screenshot.png" link="http://www.weather.gov.sg/weather-rain-area-50km/" caption="http://www.weather.gov.sg/weather-rain-area-50km/" target="_blank" alt="Screenshot of the rain areas page on the MSS website" >}}
 
 The page is updated at five-minute intervals. It's useful for determining whether it'll start raining soon---it's more likely if it's already raining in your immediate vicinity.
 
 You can also view the rain areas over the past hour, which lets you estimate how fast the rain clouds are moving:
 
 <figure>
-  <video src="recording.mp4" preload="none" poster="thumbnail.png" controls loop>
+  <video src="recording.mp4" preload="none" poster="thumbnail.png" alt="Screen recording of an animation of the rain areas changing over time." controls loop>
 </figure>
 
 And sometimes it's just fascinating to see how rainy it gets in Singapore:
 
-{{< figure src="rainy.png" caption="Light rain across the entire country" >}}
+{{< figure src="rainy.png" caption="Light rain across the entire country" alt="Raday overlay showing light rain over most of Singapore" >}}
 
 This is a nice shareable image of the rain areas from last Sunday morning. However, it's not something you can get directly from the website---the next section explains why. Later, we'll see how we can go about creating it ourselves.
 
@@ -27,9 +27,9 @@ This is a nice shareable image of the rain areas from last Sunday morning. Howev
 
 The rain areas aren't displayed on the website as an image that can be directly viewed or downloaded---it's actually a combination of a static background image containing the map, and a smaller image containing the radar data overlaid over it:
 
-{{< figure src="base-853.png" caption="base-853.png" link="https://www.weather.gov.sg/wp-content/themes/wiptheme/assets/img/base-853.png" target="_blank" >}}
+{{< figure src="base-853.png" caption="base-853.png" link="https://www.weather.gov.sg/wp-content/themes/wiptheme/assets/img/base-853.png" target="_blank" alt="Base map used for the rain areas background" >}}
 
-{{< figure src="dpsri_70km_2018111916350000dBR.dpsri.png" caption="dpsri_70km_2018111916350000dBR.dpsri.png" link="https://www.weather.gov.sg/files/rainarea/50km/v2/dpsri_70km_2018111916350000dBR.dpsri.png" target="_blank" >}}
+{{< figure src="dpsri_70km_2018111916350000dBR.dpsri.png" caption="dpsri_70km_2018111916350000dBR.dpsri.png" link="https://www.weather.gov.sg/files/rainarea/50km/v2/dpsri_70km_2018111916350000dBR.dpsri.png" target="_blank" alt="Radar overlay showing the rain areas" >}}
 
 The two images and the timestamp are then lined up in HTML and displayed by the browser. As a result, you can find both images on the page separately, but the end result you see only exists on the website.
 
@@ -84,7 +84,7 @@ You can read more about composing images with ImageMagick [here](http://www.imag
 
 This gives us the following result:
 
-{{< figure src="overlaid.png" >}}
+{{< figure src="overlaid.png" alt="Result of superimposing the radar image over the base image" >}}
 
 Next, we'll add the timestamp to the image using [`convert`](https://imagemagick.org/script/convert.php). `convert` converts images between different formats as its name goes, but can also apply a range of transformations along the way, including adding text to an image.
 
@@ -114,7 +114,7 @@ You can read more about annotating images with ImageMagick [here](http://www.ima
 
 Here is the final result with a timestamp:
 
-{{< figure src="timestamped.png" >}}
+{{< figure src="timestamped.png" alt="Result after adding a timestamp to the rain areas image" >}}
 
 You can find a comprehensive list of ImageMagick command-line options [here](https://imagemagick.org/script/command-line-options.php).
 
@@ -124,7 +124,7 @@ I've really liked the rain areas map since I first found out about it, and had t
 
 As a proof of concept, and an experiment in building a Clojure application, I made a [Telegram bot](https://t.me/WeatherSG_Bot) and [website](https://weathersg-bot.jiayu.io/) for getting the latest rain areas as an image:
 
-{{< figure src="telegram.png" class="nooutline" link="https://t.me/WeatherSG_Bot" target="_blank" >}}
+{{< figure src="telegram.png" class="nooutline" link="https://t.me/WeatherSG_Bot" target="_blank" alt="Screenshot of a Telegram chat with WeatherSG Bot sending images of rain areas" >}}
 
 {{< linkpreview title="Rain areas" description="Rain areas" url="https://weathersg-bot.jiayu.io/rain-areas" >}}
 
