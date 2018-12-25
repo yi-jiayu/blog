@@ -82,8 +82,8 @@ Anyway, killing `screencaptureui` was a short-term fix, but the underlying issue
 
 I wrote a short script which checks the output of `pmset -g` for any processes preventing sleep, then triggers a Notification Centre notification if there are any:
 
-```bash
-#!/usr/bin/env bash
+```shell
+#!/bin/sh -
 
 sleep_blocker=$(pmset -g | grep -m1 "sleep prevented by" | sed -E 's/.+sleep prevented by (.+)\)$/\1/')
 if [ ! -z "$sleep_blocker" ]; then
@@ -94,6 +94,8 @@ fi
 For example, if Intel(R) Power Gadget is running, the following notification will be shown:
 
 {{< figure src="notification.png" alt="Notification showing that Intel(R) Power Gadget is preventing sleep" class="nooutline" >}}
+
+The script above can also be found at https://gist.github.com/yi-jiayu/f1a8f32d70a6a4c3b7dbd81589c40f0d.
 
 ### Adding it to cron
 
