@@ -2,7 +2,7 @@ theme = "moonlight"
 baseURL = "https://blog.jiayu.co/"
 languageCode = "en-us"
 title = "Jiayu's Blog"
-copyright = "2018 Jiayu Yi"
+copyright = "2018-2019 Jiayu Yi"
 pygmentsCodeFences = true
 
 [params]
