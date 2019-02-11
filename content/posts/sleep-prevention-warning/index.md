@@ -1,5 +1,7 @@
 ---
-title: "Get notified when a process is preventing sleep on macOS"
+title: "Preventing my Macbook's memory from draining overnight"
+subtitle: "Get notified when a process is preventing sleep on macOS"
+slug: "get-notified-when-a-process-is-preventing-sleep-on-macos"
 date: 2018-12-25T12:34:09+08:00
 image: "notification.png"
 ---

@@ -1,11 +1,13 @@
 ---
-title: "Quickly configuring Hot Corners on macOS"
+title: "Hot Corners profiles"
+subtitle: "Quickly chanaging Hot Corners settings on macOS"
+slug: "quickly-configuring-hot-corners-on-macos"
 date: 2018-12-24T23:12:29+08:00
 image: "preferences.png"
 tags: ["awk", "scripting", "automation", "macOS", "pair programming"]
 ---
 
-My company is big on agile, so we're often encouraged to [work in pairs](https://en.wikipedia.org/wiki/Pair_programming). While I have my own reservations about pair programming, it's mostly unavoidable for a junior developer.
+My company is big on agile, so we're often encouraged to [work in pairs](https://en.wikipedia.org/wiki/Pair_programming).
 
 One challenge with pair programming on personal machines is that not everyone might be equally comfortable with the configuration. Ignoring the fact that as a [Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard) user I'm immediately awkward on a teammate's machine, a setting I use on my own machine that my pairs are often not used to is the Hot Corners.
 
