@@ -2,6 +2,7 @@
 title: "Custom traces on App Engine Standard"
 subtitle: "Sending custom traces to Stackdriver with OpenCensus"
 date: 2019-02-12 00:28:01+08:00
+tags: ["appengine", "tracing", "go"]
 ---
 
 [Bus Eta Bot](https://t.me/BusEtaBot) is a Telegram bot for getting bus arrival times from the LTA DataMall API. 

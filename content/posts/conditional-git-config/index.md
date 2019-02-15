@@ -2,6 +2,7 @@
 title: "Conditional Git configuration"
 subtitle: "No more accidentally committing with the wrong email in a new repository"
 date: 2019-02-14 23:41:38+08:00
+tags: ["git"]
 ---
 
 ## The situation

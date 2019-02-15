@@ -2,6 +2,7 @@
 title: "Namespaced Git clones with git-get"
 subtitle: "Keeping your projects organised"
 date: 2019-02-12 23:35:10+08:00
+tags: ["git"]
 ---
 
 ## tl;dr

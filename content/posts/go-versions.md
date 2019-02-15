@@ -2,6 +2,7 @@
 title: "A shell command to list all Go versions"
 subtitle: "Using sed to extract terms from web pages"
 date: 2018-12-20T09:55:04+08:00
+tags: ["go", "regex", "shell"]
 ---
 
 Here's a shell command that will list all available Go versions similar to the output of `rbenv install -l` or `nvm ls-remote`:
