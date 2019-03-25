@@ -105,15 +105,14 @@ download: s3://fpl-2018-19-data/bootstrap-static-2018-09-13T0856Z.json.gz to fpl
 
 This will download the contents of the bucket to the `fpl-2018-19-data` directory.
 
-Here is a short script to uncompress the data to a sibling `data` directory:
+Here is a short shell script to uncompress the data to a sibling `data` directory:
 
 ```sh
 #!/bin/sh -
 
 destdir=data
 for f in fpl-2018-19-data/*; do
-	# since the filename format is fixed, extract the basename with hardcoded offsets
-	dest="$destdir/${f:17:38}"
+	dest="$destdir/$(basename -s .gz $f)"
 	if [ ! -f $dest ]; then
 		echo $dest
 		gunzip -c $f > $dest
@@ -124,7 +123,7 @@ done
 Each file contains the timestamp it was downloaded at in the filename:
 
 ```console
-$ ls data | head
+$ ls data
 bootstrap-static-2018-09-12T0851Z.json
 bootstrap-static-2018-09-12T0852Z.json
 bootstrap-static-2018-09-12T1452Z.json
@@ -135,6 +134,7 @@ bootstrap-static-2018-09-14T0856Z.json
 bootstrap-static-2018-09-14T2056Z.json
 bootstrap-static-2018-09-15T0856Z.json
 bootstrap-static-2018-09-15T2056Z.json
+...
 ```
 
 I was able to extract the date from the filename using the following `strptime` pattern in Python:
@@ -151,7 +151,7 @@ datetime.datetime(2018, 9, 15, 20, 56)
 ## Example visualisations
 
 As an experiment to see what I could do with the data, I loaded it into Elasticsearch and made some
-graphs with Kibana (I'll write about my methodology for doing this in a future post):
+graphs with Kibana (I'll write about how I did this in a future post):
 
 ### Average team value over time
 
