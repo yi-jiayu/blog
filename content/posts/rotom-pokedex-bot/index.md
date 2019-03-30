@@ -3,7 +3,6 @@ title: "Rotom Pokédex bot"
 slug: "rotom-pokedex-bot"
 subtitle: "A Telegram bot for looking up Pokémon-related things"
 date: 2019-03-30 23:18:24+08:00
-draft: true
 ---
 
 Lately, I've been playing through some of the older Pokémon games (Pokémon Platinum and Pokémon
