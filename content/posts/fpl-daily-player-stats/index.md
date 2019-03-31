@@ -1,5 +1,6 @@
 ---
-title: "FPL daily player statistics dataset"
+title: "Fantasy Premier League daily player statistics dataset"
+slug: "fpl-daily-player-statistics-dataset"
 subtitle: "Player value, ownership, form, ICT index and more over time"
 date: 2019-03-25 00:31:56+08:00
 ---
