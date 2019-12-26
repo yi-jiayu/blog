@@ -29,9 +29,9 @@ It turned out to involve reassembling scrambled square-piece jigsaw puzzles. For
 example, here's a scrambled image and the original from the training data
 provided:
 
-{{< figure src="puzzle.png" alt="A scrambled image" >}}
+{{< figure src="puzzle.jpg" alt="A scrambled image" >}}
 
-{{< figure src="solution.png" alt="The unscrambled image" >}}
+{{< figure src="solution.jpg" alt="The unscrambled image" >}}
 
 ## Some literature review
 
