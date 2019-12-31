@@ -2,6 +2,7 @@
 title: "2D accelerated rendering with SDL in Chicken Scheme"
 subtitle: "Using the sdl2 egg with the C API for reference"
 date: 2019-05-09 18:20:43+08:00
+tags: ["scheme", "chicken", "graphics", "lisp"]
 ---
 
 After my semi-successful attempt at writing a terminal-based CHIP-8 intepreter in Go (more about it

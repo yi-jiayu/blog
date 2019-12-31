@@ -2,6 +2,7 @@
 title: "Telegram animated stickers"
 subtitle: "Investigating Telegram's new TGS file format"
 date: 2019-07-07T21:41:08+08:00
+tags: ["telegram"]
 ---
 
 This morning, Telegram added support for animated stickers:

@@ -3,6 +3,7 @@ title: "My Huawei Honorcup Marathon 2 experience"
 subtitle: "Implementing a research paper and rewriting MATLAB into NumPy"
 date: 2019-12-26T22:33:41+08:00
 image: certificate.jpg
+tags: ["python", "numpy", "matlab"]
 ---
 
 In October this year, I took part in the [Huawei Honorcup Marathon

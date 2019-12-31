@@ -2,6 +2,7 @@
 title: "Deploying Leiningen projects to GitHub Package Registry"
 subtitle: "Set up Leiningen to deploy Clojure libraries to GitHub Package Registry as Apache Maven packages"
 date: 2019-09-04T11:42:19+05:30
+tags: ["clojure", "github"]
 ---
 
 I recently got access to [GitHub Package Registry](https://github.com/features/package-registry),

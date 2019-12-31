@@ -2,6 +2,7 @@
 title: "Managing personal DNS records with Terraform"
 subtitle: "Small ways to use infrastructure-as-code in your daily life"
 date: 2019-12-25T13:47:39+08:00
+tags: ["dns", "terraform", "aws"]
 ---
 
 If you own a domain or run a website, chances are you had to set some DNS

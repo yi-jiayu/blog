@@ -2,6 +2,7 @@
 title: "Edge detection with ImageMagick"
 subtitle: "An attempt at generating line art from Pokémon images"
 date: 2019-05-14 22:43:44+08:00
+tags: ["imagemagick", "pokemon"]
 ---
 
 Recently, I was trying to generate line art from Ken Sugimori Pokémon artwork, like this Turtwig

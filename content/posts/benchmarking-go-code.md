@@ -2,6 +2,7 @@
 title: "Benchmarking Go code"
 subtitle: "Calculating statistical significance with benchstat"
 date: 2019-05-06T09:55:06+08:00
+tags: ["go", "performance"]
 ---
 
 I recently attended GopherCon Singapore 2019, and one of the talks was about optimising Go code, by

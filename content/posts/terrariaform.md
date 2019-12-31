@@ -2,6 +2,7 @@
 title: "Terrariaform"
 subtitle: "Building a Terraria server with Terraform"
 date: 2019-12-24T15:28:56+08:00
+tags: ["terraform", "digitalocean", "terraria"]
 ---
 
 I think [Terraria](https://terraria.org/) is a great game, and according to

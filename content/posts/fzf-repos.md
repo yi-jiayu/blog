@@ -2,6 +2,7 @@
 title: "Fuzzy-searching GitHub or GitLab repositories"
 subtitle: "Using fzf to quickly find and open projects in the browser"
 date: 2019-04-11T21:10:51+08:00
+tags: ["github", "gitlab", "fzf", "shell"]
 ---
 
 Here's a script that will open a GitHub repository in your browser:

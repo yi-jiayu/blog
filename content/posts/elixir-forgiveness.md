@@ -2,6 +2,7 @@
 title: Handling "no process" errors in Elixir
 subtitle: Try asking forgiveness instead of getting permission
 date: 2019-12-28T21:04:42+08:00
+tags: ["elixir", "erlang"]
 ---
 
 Let's say we have a PID[^1] from somewhere:
