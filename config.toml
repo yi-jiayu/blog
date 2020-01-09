@@ -27,3 +27,6 @@ pygmentsCodeFences = true
   [[related.indices]]
     name = "date"
     weight = 10
+
+[markup.goldmark.renderer]
+  unsafe = true
