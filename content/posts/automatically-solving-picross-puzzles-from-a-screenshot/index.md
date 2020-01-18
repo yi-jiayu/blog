@@ -2,7 +2,7 @@
 title: "Automatically solving picross puzzles from a screenshot"
 subtitle: "For when you're wrong on the last cell"
 date: 2019-11-01 00:10:27+08:00
-tags: ["picross", "python", "z3", "numpy"]
+tags: ["picross", "python", "z3", "numpy", "logic"]
 ---
 
 I recently worked on a picross solver that solves puzzles from a screenshot of
