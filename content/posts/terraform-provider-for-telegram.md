@@ -13,6 +13,10 @@ for Telegram:
 description="Terraform provider for Telegram"
 url="https://github.com/yi-jiayu/terraform-provider-telegram" >}}
 
+[Terraform](https://www.terraform.io/) is an infrastructure as code tool which
+allows you to declaratively specify your infrastructure and reproducibly set it
+up.
+
 My main goal was to have first-class Terraform support for setting a [bot
 webhook](https://core.telegram.org/bots/api#setwebhook). Right now, you can
 automate all the infrastructure for a Telegram bot except for setting the
