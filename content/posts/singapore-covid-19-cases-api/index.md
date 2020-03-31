@@ -1,6 +1,7 @@
 ---
 title: "Singapore COVID-19 cases API"
 date: 2020-03-31T22:23:56+08:00
+image: dashboard.png
 ---
 
 The [MOH website](https://www.moh.gov.sg/covid-19) is the authoritative source
