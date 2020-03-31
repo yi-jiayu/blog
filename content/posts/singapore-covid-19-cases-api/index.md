@@ -7,9 +7,18 @@ The [MOH website](https://www.moh.gov.sg/covid-19) is the authoritative source
 of information about the current COVID-19 situation in Singapore, but it's not
 exactly machine-readable.
 
-Instead, we can turn to the [COVID-19 Situation
+It doesn't seem like there's any official API either. For those trying to build
+their own dashboard or crunch some data, it might look like you have no choice
+but to do some data entry, scrape HTML or get data from a third-party source.
+
+However, the MOH site also links to a more interactive [COVID-19 Situation
 Dashboard](https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89)
-hosted on ArcGIS online for a convenient JSON API:
+hosted on ArcGIS online which is a JavaScript application that makes
+requests to a JSON API:
+
+{{< figure src="dashboard.png" alt="Singapore COVID-19 Situation Dashboard" >}}
+
+After a bit of poking around, I was able to find this:
 
 ```
 $ curl 'https://services6.arcgis.com/LZwBmoXba0zrRap7/arcgis/rest/services/COVID_19_Prod_feature/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Case_ID%20desc&resultOffset=0&resultRecordCount=1' | jq '.features[0].attributes'
