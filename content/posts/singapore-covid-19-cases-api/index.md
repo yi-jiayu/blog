@@ -13,7 +13,7 @@ but to do some data entry, scrape HTML or get data from a third-party source.
 
 However, the MOH site also links to a more interactive [COVID-19 Situation
 Dashboard](https://experience.arcgis.com/experience/7e30edc490a5441a874f9efe67bd8b89)
-hosted on ArcGIS online which is a JavaScript application that makes
+hosted on ArcGIS Online which is a JavaScript application that makes
 requests to a JSON API:
 
 {{< figure src="dashboard.png" alt="Singapore COVID-19 Situation Dashboard" >}}
