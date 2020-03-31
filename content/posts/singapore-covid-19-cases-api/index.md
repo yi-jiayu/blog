@@ -86,3 +86,10 @@ such as total, active, recovered, imported and local cases:
 * Confirmed cases: `Confirmed`
 
 I wonder how the naming scheme came about.
+
+## Afterthought
+
+It's possible that the [Coronavirus COVID-19 Global Cases by the Center for
+Systems Science and Engineering (CSSE) at Johns Hopkins University
+(JHU)](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+may also expose a similar API but for global data, but I didn't look into it.
