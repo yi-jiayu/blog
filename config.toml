@@ -4,6 +4,7 @@ languageCode = "en-us"
 title = "Jiayu's Blog"
 copyright = "2018-2019 Jiayu Yi"
 pygmentsCodeFences = true
+summaryLength = 40
 
 [params]
 	author = "Jiayu Yi"
